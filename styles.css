@@ -18,3 +18,23 @@ html,body {
     width: 80%;
     margin: auto;
 }
+.search_bar{
+    width: 30%;
+    line-height: 2;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 4%, 5%);
+    transition: all .3s;
+}
+
+.search_bar:focus{
+    width: 100%;
+    border-color: black;
+}
+
+.search_bar::placeholder{
+     font-weight: 200;
+}
+
+.search_bar:focus::placeholder{
+    color: transparent;
+}
